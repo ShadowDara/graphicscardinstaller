@@ -6,15 +6,19 @@ install()
 
 import time
 import sys
+import random
 
 from rich import print
 from rich.console import Console
 from rich.markup import escape
 from rich.text import Text
+from rich.progress import track
 
 from app.vars import __version__
 from app.vars import __alphabet__
 from app.vars import __text_sleep__
+from app.vars import __modules__
+from app.vars import __module_time__
 
 console = Console()
 
@@ -40,19 +44,62 @@ def crazy_print_rich(markup: str):
 
 def main():
     # The Text which will be printed in the Terminal!
-
+    """
     # Graphic Card Installer Version {__version__} made by Shadowdara
-    crazy_print_rich(f"[bold magenta]Graphic Card Installer Version [underline blue]{__version__}[/] made by [underline blue]Shadowdara[/]      \n\n")
+    crazy_print_rich(f"[bold magenta]Graphic Card Installer Version [underline blue]{__version__}[/] made by [underline blue]Shadowdara[/]      ")
+    print("\n")
 
     # Starting the Software ...
-    crazy_print_rich("[bold green]Starting the Software ...")
+    crazy_print_rich("[bold green]Starting the Software ...  ")
+    print("\n\n")
 
-    print()
-    print("[bold dark_orange]Achtung![/]")
-    print("[on light_salmon black]Farbhintergrund + Textfarbe[/]")
+    # Checking for Updates
+    crazy_print_rich("[bold dark_orange]Checking for Updates")
+    print("\n")
 
-if __name__ == "__main__":
-    # For Faster Testing!
-    __text_sleep__ = 0.001
+    # Updates available!
+    crazy_print_rich("[bold red]Updates available!")
+    print("\n\n")
+    
+    # Downloading the latest Version
+    for task in track(range(100), description="[bold green]Downloading latest Version "):
+        time.sleep(0.05)
+    print("")
 
-    main()
+    # Installing the latest Version
+    for task in track(range(100), description="[bold green]Installing latest Version  "):
+        time.sleep(0.25)
+    print("\n")
+    
+    # Intialiting
+    for task in track(range(100), description="Intialising                "):
+        time.sleep(1)
+    print("\n")
+    
+    # Downlading Modules
+    for task in track(range(100), description="[bold green]Downlading Modules         "):
+        time.sleep(0.1)
+    print("")
+
+    # Installing Modules
+    for task in track(range(100), description="[bold green]Installing Modules         "):
+        time.sleep(0.1)
+    print("")
+    """
+    # Checking Modules
+    crazy_print_rich("[bold green]Checking the Modules")
+    print("\n")
+
+    # Printing all Modules
+    for x in __modules__:
+        print(f"{x} [bold green]Loaded![/]")
+        time.sleep(2 / random.randint(1, __module_time__))
+    print("")
+    
+    # All Modules are loaded succesfully!
+    crazy_print_rich("[bold green]All Modules are loaded succesfully!")
+    print("")
+
+
+    #print("[bold dark_orange]Achtung![/]")
+    #print("[on light_salmon black]Farbhintergrund + Textfarbe[/]")
