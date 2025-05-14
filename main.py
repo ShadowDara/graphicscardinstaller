@@ -7,8 +7,8 @@
 from rich.traceback import install
 install()
 
-import app.terminal_load as l
-import app.start_ui as ui
+import pyapp.terminal_load as l
+import pyapp.start_ui as ui
 
 def main():
     l.main()

@@ -1,3 +1,7 @@
+# Python
 __pycache__
 build/
 dist/
+
+# Output
+d4r_output/
