@@ -1,11 +1,22 @@
 import { mdsvex } from 'mdsvex';
-import adapter from '@sveltejs/adapter-auto';
-import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
+import adapter from '@sveltejs/adapter-static';
 
 const config = {
-	preprocess: [vitePreprocess(), mdsvex()],
-	kit: { adapter: adapter() },
-	extensions: ['.svelte', '.svx']
+  extensions: ['.svelte', '.svx'],
+
+  preprocess: [
+    mdsvex({ extensions: ['.svx'] })
+  ],
+
+  kit: {
+    adapter: adapter({
+      // Option für statischen Export
+      pages: 'build', // Ausgabeordner für die statischen Seiten
+      assets: 'build', // Wo die Assets (Bilder, CSS, JS) abgelegt werden
+      fallback: null, // Keine SPA-Index.html, sondern jede Route als eigene HTML
+      strict: true, // Überprüft, dass alle Seiten statisch sind
+    })
+  }
 };
 
 export default config;
