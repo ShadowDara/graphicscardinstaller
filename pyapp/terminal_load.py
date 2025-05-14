@@ -14,11 +14,11 @@ from rich.markup import escape
 from rich.text import Text
 from rich.progress import track
 
-from app.vars import __version__
-from app.vars import __alphabet__
-from app.vars import __text_sleep__
-from app.vars import __modules__
-from app.vars import __module_time__
+from pyapp.vars import __version__
+from pyapp.vars import __alphabet__
+from pyapp.vars import __text_sleep__
+from pyapp.vars import __modules__
+from pyapp.vars import __module_time__
 
 console = Console()
 
@@ -87,7 +87,7 @@ def main():
     print("")
     """
     # Checking Modules
-    crazy_print_rich("[bold green]Checking the Modules")
+    crazy_print_rich("[bold green]Checking Software Modules")
     print("\n")
 
     # Printing all Modules
