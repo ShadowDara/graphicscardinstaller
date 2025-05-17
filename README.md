@@ -2,6 +2,9 @@
 
 Install a new Graphic Card Easily!
 
+
+<!--
+
 ## Info
 
 ## LICENSE
@@ -36,3 +39,5 @@ pip freeze > requirements.txt
 ```
 
 </details>
+
+-->
