@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+:root {
+    /* Header */
+    --header-text-color: #ffffff;
+    --header-bg-color: #000000;
+
+    /* Body */
+    --body-text-color: #ffffff;
+    --body-bg-color: #1e1e1e;
+}
+
+body {
+    color: var(--body-text-color);
+	background-color: var(--body-bg-color);
+}

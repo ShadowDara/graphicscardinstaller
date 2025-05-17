@@ -5,6 +5,7 @@ set -e
 # Install dependencies for the project
 
 # Python Glue
+python3 -m venv .venv
 cd pyapp
 pip install -r requirements.txt
 cd ..
@@ -12,7 +13,6 @@ cd ..
 # Vue Tauri App
 cd tauri
 npm install
-npm run tauri init
 cd ..
 
 # Svelte Webpage

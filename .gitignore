@@ -2,6 +2,9 @@
 __pycache__
 build/
 dist/
+*.spec
 
 # Output
 d4r_output/
+
+app/

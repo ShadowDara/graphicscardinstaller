@@ -9,7 +9,7 @@ __alphabet__ = string.printable
 # "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 # Pause between each letter
-__text_sleep__ = 1 / 600
+__text_sleep__ = 1 / 800
 
 # Time between each module
 # 1 / __module_time__

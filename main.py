@@ -8,11 +8,9 @@ from rich.traceback import install
 install()
 
 import pyapp.terminal_load as l
-import pyapp.start_ui as ui
 
 def main():
     l.main()
-    ui.main()
 
 if __name__ == "__main__":
     main()

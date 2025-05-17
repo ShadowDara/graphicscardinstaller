@@ -2,19 +2,18 @@
 
 Install a new Graphic Card Easily!
 
-<!--
-
-pip freeze > requirements.txt
-
-pip install -r requirements.txt
-
--->
-
 ## Info
 
-## [Webpage](page/)
+## LICENSE
 
-## Develep
+## Why
+
+
+
+<details><summary>Develepment</summary>
+<br>
+
+## [Webpage](page/)
 
 **Install Requirements**
 ```sh
@@ -35,3 +34,5 @@ pip freeze > requirements.txt
 ```sh
 ./build.sh
 ```
+
+</details>

@@ -98,8 +98,9 @@ def main():
     
     # All Modules are loaded succesfully!
     crazy_print_rich("[bold green]All Modules are loaded succesfully!")
-    print("")
+    print("\n\n")
 
+    crazy_print_rich("[bold dark_orange]Starting UI Now!")
 
     #print("[bold dark_orange]Achtung![/]")
     #print("[on light_salmon black]Farbhintergrund + Textfarbe[/]")
