@@ -1,6 +1,4 @@
 @import 'tailwindcss';
-@plugin '@tailwindcss/forms';
-@plugin '@tailwindcss/typography';
 
 :root {
     /* Header */
@@ -9,10 +7,34 @@
 
     /* Body */
     --body-text-color: #ffffff;
-    --body-bg-color: #1e1e1e;
+    --body-bg-color-1: #000000;
+    --body-bg-color-2: #213025;
+    --body-bg-color-3: #084317;
+    --body-bg-color-4: #076c20;
 }
 
 body {
     color: var(--body-text-color);
-	background-color: var(--body-bg-color);
+    background: linear-gradient(
+        280deg,
+        var(--body-text-color),
+        var(--body-bg-color-1),
+        var(--body-bg-color-2),
+        var(--body-bg-color-3),
+        var(--body-bg-color-4)
+    );
+    animation: gradientFlow 10s ease infinite;
+    background-size: 300% 300%;
 }
+
+@keyframes gradientFlow {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+ }
