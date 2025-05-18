@@ -1,0 +1,81 @@
+<svg width="300" height="150" viewBox="0 0 300 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="caseGradient" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#3a3f47" />
+            <stop offset="100%" stop-color="#1e2228" />
+        </linearGradient>
+
+        <linearGradient id="fanGradient" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#4a90e2" />
+            <stop offset="100%" stop-color="#001f5b" />
+        </linearGradient>
+
+        <radialGradient id="fanCenterGradient" cx="0.5" cy="0.5" r="0.5">
+            <stop offset="0%" stop-color="#a0c4ff" />
+            <stop offset="100%" stop-color="#0d1b3d" />
+        </radialGradient>
+
+        <linearGradient id="heatSinkGradient" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#7a7f85" />
+            <stop offset="100%" stop-color="#3c4146" />
+        </linearGradient>
+
+        <!-- Weiches Glühen -->
+        <filter id="softGlow" x="-70%" y="-70%" width="240%" height="240%">
+            <feDropShadow dx="0" dy="0" stdDeviation="7" flood-color="#FF6D23" flood-opacity="0.35" />
+            <feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#FF6D23" flood-opacity="0.2" />
+        </filter>
+    </defs>
+
+    <!-- Gehäuse -->
+    <rect x="20" y="30" width="260" height="90" rx="20" ry="20" fill="url(#caseGradient)" stroke="#111"
+        stroke-width="4" />
+
+    <!-- Kühlrippen -->
+    <g stroke="url(#heatSinkGradient)" stroke-width="6" stroke-linecap="round">
+        <line x1="130" y1="40" x2="30" y2="110" />
+        <line x1="150" y1="40" x2="50" y2="110" />
+        <line x1="170" y1="40" x2="70" y2="110" />
+        <line x1="190" y1="40" x2="90" y2="110" />
+        <line x1="210" y1="40" x2="110" y2="110" />
+        <line x1="230" y1="40" x2="130" y2="110" />
+        <line x1="250" y1="40" x2="150" y2="110" />
+    </g>
+
+    <!-- Drehender Lüfter mit weichem Glühen -->
+    <g transform="translate(235 75)" filter="url(#softGlow)">
+        <circle r="50" fill="url(#fanGradient)" stroke="#123366" stroke-width="6" />
+        <circle r="25" fill="url(#fanCenterGradient)" stroke="#345699" stroke-width="3" />
+
+        <g stroke="#a0c4ff" stroke-width="6" stroke-linecap="round">
+            <g>
+                <line x1="0" y1="0" x2="0" y2="-40" />
+                <line x1="0" y1="0" x2="28" y2="-28" />
+                <line x1="0" y1="0" x2="40" y2="0" />
+                <line x1="0" y1="0" x2="28" y2="28" />
+                <line x1="0" y1="0" x2="0" y2="40" />
+                <line x1="0" y1="0" x2="-28" y2="28" />
+                <line x1="0" y1="0" x2="-40" y2="0" />
+                <line x1="0" y1="0" x2="-28" y2="-28" />
+
+                <!-- Animation -->
+                <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 0 0" to="360 0 0"
+                    dur="3s" repeatCount="indefinite" />
+            </g>
+        </g>
+    </g>
+
+    <!-- PCI-Connector -->
+    <rect x="15" y="115" width="270" height="15" rx="4" ry="4" fill="#222" />
+
+    <rect x="25" y="118" width="15" height="9" fill="#666" />
+    <rect x="50" y="118" width="15" height="9" fill="#666" />
+    <rect x="75" y="118" width="15" height="9" fill="#666" />
+    <rect x="100" y="118" width="15" height="9" fill="#666" />
+    <rect x="125" y="118" width="15" height="9" fill="#666" />
+    <rect x="150" y="118" width="15" height="9" fill="#666" />
+    <rect x="175" y="118" width="15" height="9" fill="#666" />
+    <rect x="200" y="118" width="15" height="9" fill="#666" />
+    <rect x="225" y="118" width="15" height="9" fill="#666" />
+    <rect x="250" y="118" width="15" height="9" fill="#666" />
+</svg>
