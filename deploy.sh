@@ -4,6 +4,6 @@ set -e
 
 # Deploy the Svelte Webpage to Github Pages
 
-npm run build
+cd page
 
 npm run deploy
