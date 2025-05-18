@@ -6,6 +6,8 @@
 
 <div align="center">
 
+<h2><a href="https://shadowdara.github.io/graphicscardinstaller/">Webpage</a></h2>
+
 ![4 Fan Card](/page/static/fan_quad.svg)
 
 </div>
