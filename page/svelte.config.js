@@ -13,7 +13,7 @@ const config = {
       // Option für statischen Export
       pages: 'build', // Ausgabeordner für die statischen Seiten
       paths: {
-        base: '/graphicscardinstaller/'
+        base: '/graphicscardinstaller'
       },
       assets: 'build', // Wo die Assets (Bilder, CSS, JS) abgelegt werden
       fallback: null, // Keine SPA-Index.html, sondern jede Route als eigene HTML
