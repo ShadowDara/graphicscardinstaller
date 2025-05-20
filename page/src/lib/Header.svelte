@@ -1,10 +1,14 @@
+<script>
+	import { base } from "$app/paths";
+</script>
+
 <!-- Website Header -->
 
 <header class="underline">
-    <span><a href="/">Home</a></span>
-    <span><a href="/troll_info">Info</a></span>
-    <span><a href="/docs">Docs</a></span>
-    <span><a href="/downloads">Download</a></span>
+    <span><a href="{base}/">Home</a></span>
+    <span><a href="{base}/troll_info">Info</a></span>
+    <span><a href="{base}/docs">Docs</a></span>
+    <span><a href="{base}/downloads">Download</a></span>
 </header>
 
 <style>
