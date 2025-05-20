@@ -1,10 +1,10 @@
 <!-- Website Header -->
 
 <header class="underline">
-    <span><a href="/">Home</a></span>
-    <span><a href="/troll_info">Info</a></span>
-    <span><a href="/docs">Docs</a></span>
-    <span><a href="/downloads">Download</a></span>
+    <span><a href="/graphicscardinstaller/">Home</a></span>
+    <span><a href="/graphicscardinstaller/troll_info.html">Info</a></span>
+    <span><a href="/graphicscardinstaller/docs.html">Docs</a></span>
+    <span><a href="/graphicscardinstaller/downloads.html">Download</a></span>
 </header>
 
 <style>
