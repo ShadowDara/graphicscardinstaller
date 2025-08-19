@@ -44,7 +44,7 @@ def crazy_print_rich(markup: str):
 
 def main():
     # The Text which will be printed in the Terminal!
-    """
+    
     # Graphic Card Installer Version {__version__} made by Shadowdara
     crazy_print_rich(f"[bold magenta]Graphic Card Installer Version [underline blue]{__version__}[/] made by [underline blue]Shadowdara[/]      ")
     print("\n")
@@ -85,7 +85,7 @@ def main():
     for task in track(range(100), description="[bold green]Installing Modules         "):
         time.sleep(0.1)
     print("")
-    """
+    
     # Checking Modules
     crazy_print_rich("[bold green]Checking Software Modules")
     print("\n")
@@ -100,7 +100,10 @@ def main():
     crazy_print_rich("[bold green]All Modules are loaded succesfully!")
     print("\n\n")
 
-    crazy_print_rich("[bold dark_orange]Starting UI Now!")
+    crazy_print_rich("[bold dark_orange]Installed Succesfully    ")
+    print("\n")
+    crazy_print_rich("[bold dark_orange]Restarting your Computer now!    ")
+    input()
 
     #print("[bold dark_orange]Achtung![/]")
     #print("[on light_salmon black]Farbhintergrund + Textfarbe[/]")
