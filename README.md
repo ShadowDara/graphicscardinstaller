@@ -35,6 +35,13 @@ Release Available soon
 
 [Disclaimer](/Disclaimer.md)
 
+
+## Soon
+
+I will make a better Part 2 soon, *trust me*
+
+I dit not updated the Page when i made the Release because Svelte is fucking broken
+
 <!--
 
 ## Info
